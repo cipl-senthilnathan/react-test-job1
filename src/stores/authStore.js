@@ -63,6 +63,7 @@ class AuthStore {
 
     // browserHistory.replace('/app');
     // history.push('/app');
+    this.values.history.push('/app');
     console.log("Before return");
     return <Redirect to={ PRIVATE_URL } />;
   }

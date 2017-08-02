@@ -1,14 +1,11 @@
-import React,  { Component } from 'react';
-import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
+import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-import { inject, observer } from 'mobx-react';
 
-@inject('categoryStore')
-@observer
-export default class App extends Component{
 
+
+
+class Welcome extends Component{
   render(){
-    let values = this.props.categoryStore.fullName;
     return(
       <div>
       <nav className="navbar navbar-light">
@@ -38,15 +35,19 @@ export default class App extends Component{
           </ul>
         </div>
       </nav>
-        <div>
-          <BootstrapTable data={ values }>
-                  <TableHeaderColumn dataField='id' isKey>Product ID</TableHeaderColumn>
-                  <TableHeaderColumn dataField='name'>Product Name</TableHeaderColumn>
-                  <TableHeaderColumn dataField='date'>Product Price</TableHeaderColumn>
-          </BootstrapTable>
+      <div className="banner" style={{"text-align": 'center',
+      "background-color": 'rgba(255, 191, 198, 0.95)',
+      "height": '150px'}}>
+        <div className="container">
+          <h1 className="logo-font">
+              React-Demo-App
+          </h1>
+          <p>A place to share your knowledge.</p>
         </div>
       </div>
-
+    </div>
     )
   }
 }
+
+export default Welcome;

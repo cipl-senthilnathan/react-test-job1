@@ -5,13 +5,17 @@ import { Provider } from 'mobx-react';
 
 import authStore from './stores/authStore';
 import commonStore from './stores/commonStore';
+import categoryStore from './stores/categoryStore';
 import userStore from './stores/userStore';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 import App from './components/App';
+import welcome from './components/welcome';
+
 
 const stores = {
-  authStore
+  authStore,
+  categoryStore
 };
 
 // For easier debugging

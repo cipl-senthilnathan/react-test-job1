@@ -20,7 +20,7 @@ class SignIn extends Component{
             <div className="col-md-4 offset-md-3 col-xs-12">
               <h2  className="text-xs-center">Sign In </h2>
               <p className="text-xs-center">
-                <Link to={'/signup'}>
+                <Link to={"signup"}>
                   Need an account?
                 </Link>
               </p>
